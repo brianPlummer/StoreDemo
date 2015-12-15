@@ -10,9 +10,9 @@ import javax.inject.Singleton;
 
 @Singleton
 public class ArticleStore extends Store<String, ArticleEnvelope> {
+
     @Inject
     public ArticleStore(ArticleParser parser, ArticleDiskDAO diskDAO, ArticleNetworkDAO networkDAO) {
         super(parser, diskDAO, networkDAO);
-
     }
 }
